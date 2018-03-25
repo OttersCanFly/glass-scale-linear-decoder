@@ -25,11 +25,6 @@ void setup()
 {
 	Serial.begin(115200);
 	
-
-	//pinMode(chipSelectPin1, OUTPUT);
-	//pinMode(chipSelectPin2, OUTPUT);
-	
-
 	LS7366_Init();
 
 	Serial.flush();
@@ -58,7 +53,7 @@ void loop()
 		
 	}
 
-	if (s == "Now" || s == "")
+	if (s == "Now")
 	{
 
 		encoder1Value = getEncoderValue(1);
